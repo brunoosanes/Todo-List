@@ -1,0 +1,349 @@
+/* ALL AND BODY STYLES */
+/* ALL AND BODY STYLES */
+/* ALL AND BODY STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  width: 10vw;
+  height: 7vh;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* HEADER STYLE */
+/* CONTENT STYLE */
+/* CONTENT STYLE */
+
+.header {
+  height: 15vh;
+  width: 100vw;
+  background-color: #2b323b;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 3.5rem;
+  padding-left: 10px;
+}
+
+/* CONTENT STYLE */
+/* CONTENT STYLE */
+/* CONTENT STYLE */
+
+.contentContainer {
+  flex-grow: 1;
+  display: flex;
+}
+
+/* SIDE BAR */
+/* SIDE BAR */
+/* SIDE BAR */
+
+.projectsSideBar {
+  width: 20vw;
+  background-color: #f5f6f8;
+  display: flex;
+  flex-direction: column;
+  min-height: 75vh;
+}
+
+.projectsP {
+  font-size: 3rem;
+  border-bottom: black 2px solid;
+  text-align: center;
+  padding-top: 10px;
+  width: 17vw;
+  margin: 0 auto 0 auto;
+}
+
+.project,
+.newProjectBtn {
+  margin: 2vh 0 0 3vw;
+  width: 15vw;
+  padding: 3px 2px 3px 10px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newProjectBtn {
+  order: 1;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.project:hover,
+.newProjectBtn:hover {
+  background-color: #33333333;
+}
+/* ADD PROJECT BUTTON SYMBOL */
+.plus {
+  font-size: 2rem;
+}
+
+/* REMOVE PROJECT BTN */
+.removeProjectBtn {
+  order: 2;
+  align-self: center;
+  justify-self: flex-end;
+  margin-top: auto;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 96, 96);
+  font-weight: bold;
+  width: 8vw;
+  height: 6vh;
+}
+
+.current {
+  border: 1px solid black;
+  background-color: #33333333;
+}
+/* PROJECT AND TASK DISPLAYER */
+/* PROJECT AND TASK DISPLAYER */
+/* PROJECT AND TASK DISPLAYER */
+
+.projectDisplayer {
+  width: 80vw;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+
+.projectDisplayer.show {
+  display: flex;
+}
+
+.descriptionContainer {
+  height: 10.3vh;
+  border-bottom: grey 1px solid;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.description {
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+.tasksContainer {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vh 0;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+}
+.removeTaskBtn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+  border: 2px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 96, 96);
+  font-weight: bold;
+  width: 8vw;
+  height: 6vh;
+}
+
+.newTaskBtn {
+  margin-bottom: 5vh;
+  border-radius: 50%;
+  width: 9vw;
+  height: 9vw;
+  align-self: flex-end;
+  margin-right: 5vw;
+  font-size: 0.8rem;
+  border: 5px solid #ffffff;
+  background-color: #2b323b;
+  color: #ffffff;
+  cursor: pointer;
+}
+.newTaskBtn:hover {
+  border: 5px solid #2b323b;
+  font-size: 1rem;
+}
+
+.plusSymbol {
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+
+.newTaskBtnTxt {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+/* FOOTER STYLE */
+/* FOOTER STYLE */
+/* FOOTER STYLE */
+
+.footer {
+  height: 10vh;
+  width: inherit;
+  background-color: #2b323b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* BOXES STYLE */
+/* BOXES STYLE */
+/* BOXES STYLE */
+
+.newProjectBoxContainer,
+.newTaskBoxContainer {
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  display: none;
+}
+
+.newProjectBoxContainer.show,
+.newTaskBoxContainer.show {
+  display: flex;
+}
+
+.newProjectBox,
+.newTaskBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50vw;
+  height: 50vh;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.boxInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.projectNameTxt,
+.projectDescriptionTxt,
+.taskNameTxt {
+  font-size: 2.5rem;
+  color: #2b323b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.boxBtns {
+  display: flex;
+  gap: 4vw;
+}
+
+.addBtn,
+.addTaskBtn {
+  border: 1px solid #3ba395;
+  color: #3ba395;
+}
+
+.cancelProjectBtn,
+.cancelTaskBtn {
+  border: 1px solid rgb(255, 96, 96);
+  color: rgb(255, 96, 96);
+}
+
+input {
+  width: 30vw;
+  height: 7vh;
+  border-bottom: black 2px;
+  border: none;
+  border-radius: 10px;
+  background-color: #e0e0e0;
+  font-size: 1.3rem;
+  padding-left: 20px;
+}
+
+.taskName {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.taskPriority {
+  display: flex;
+  width: 40vh;
+  justify-content: space-around;
+  font-size: 2.5rem;
+  color: #2b323b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+select {
+  width: 10vw;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.task {
+  border: 1px solid black;
+  width: 70vw;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  background-color: #f5f6f8;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.low {
+  border-left: greenyellow 10px solid;
+}
+
+.medium {
+  border-left: yellow 10px solid;
+}
+
+.high {
+  border-left: red 10px solid;
+}
+
+.selected {
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}

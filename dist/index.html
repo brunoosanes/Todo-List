@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">TODO LIST 2</div>
+      <div class="contentContainer">
+        <div class="projectsSideBar">
+          <p class="projectsP">Projects</p>
+          <div class="projectsContainer"></div>
+          <div class="newProjectBtn">
+            <span class="plus">+</span>new project
+          </div>
+          <button class="removeProjectBtn">REMOVE PROJECT</button>
+        </div>
+        <div class="projectDisplayer">
+          <div class="descriptionContainer">
+            DESCRIPTION:
+            <div class="description"></div>
+          </div>
+          <div class="tasksContainer"></div>
+          <div class="btns">
+            <button class="removeTaskBtn">REMOVE TASK</button>
+            <button class="newTaskBtn">
+              <span> </span><br /><span class="plusSymbol">+</span><br /><span
+                class="newTaskBtnTxt"
+                >new task</span
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer">Developed by Bruno Osanes</div>
+    </div>
+
+    <!-- BOXES THAT APPEAR AS BUTTONS ARE CLICKED -->
+
+    <!-- PROJECT BOX -->
+    <div class="newProjectBoxContainer">
+      <div class="newProjectBox">
+        <div class="boxInputs">
+          <div class="projectNameInput">
+            <div class="projectNameTxt">Project Name</div>
+            <input type="text" maxlength="25" class="titleInput" />
+          </div>
+          <div class="projectDescriptionInput">
+            <div class="projectDescriptionTxt">Project Description</div>
+            <input type="text" maxlength="120" class="descriptionInput" />
+          </div>
+        </div>
+        <div class="boxBtns">
+          <button class="addBtn">add project</button>
+          <button class="cancelProjectBtn">cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TASK BOX -->
+    <div class="newTaskBoxContainer">
+      <div class="newTaskBox">
+        <div class="taskName">
+          <div class="taskNameTxt">Task name:</div>
+          <input type="text" class="taskNameInput" />
+        </div>
+        <div class="taskPriority">
+          <div class="taskPriorityTxt">Priority:</div>
+          <select name="select">
+            <option value="low" class=".low">Low</option>
+            <option value="medium" class="medium">Medium</option>
+            <option value="high" class="high">High</option>
+          </select>
+        </div>
+        <div class="dueDate">
+          <input type="date" class="dueDateInput" />
+        </div>
+        <div class="boxBtns">
+          <button class="addTaskBtn">add task</button>
+          <button class="cancelTaskBtn">cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
